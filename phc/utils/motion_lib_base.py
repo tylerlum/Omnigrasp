@@ -128,6 +128,7 @@ class MotionLibBase():
         return
         
     def load_data(self, motion_file,  min_length=-1, im_eval = False):
+        assert os.path.exists(motion_file), f"motion_file = {motion_file} does not exist"
         if osp.isfile(motion_file):
             self.mode = MotionlibMode.file
             

@@ -199,7 +199,7 @@ if __name__ == "__main__":
     smpl_robot.load_from_skeleton(v_template=torch.from_numpy(v_template).float())
     # smpl_robot.load_from_skeleton(gender=gender_beta[0:1])
     
-    test_good = f"/tmp/smpl/test_good.xml"
+    test_good = f"/tmp/smpl/test.xml"
     smpl_robot.write_xml(test_good)
     # smpl_robot.write_xml("test.xml")
     

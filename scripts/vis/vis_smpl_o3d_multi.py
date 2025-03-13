@@ -96,7 +96,7 @@ pkl_data = joblib.load(pkl_dir)
 mujoco_2_smpl = [mujoco_joint_names.index(q) for q in joint_names if q in mujoco_joint_names]
 
 # data_file = "data/quest/home1_isaac.pkl"
-# sk_tree = SkeletonTree.from_mjcf(f"/tmp/smpl/test_good.xml")
+# sk_tree = SkeletonTree.from_mjcf(f"/tmp/smpl/test.xml")
 # motion_lib = MotionLibSMPLTest("data/quest/home1_isaac.pkl", [7, 3, 22, 17],torch.device("cpu"))
 # motion_lib.load_motions(skeleton_trees=[sk_tree],
 #                         gender_betas=[torch.zeros(17)] ,
